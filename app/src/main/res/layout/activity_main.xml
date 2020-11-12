@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/mainBackground">
+        <ListView
+                android:layout_width="300dp"
+                android:layout_height="450dp"
+                android:dividerHeight="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp" android:layout_marginRight="8dp" android:layout_marginEnd="8dp"
+                android:id="@+id/devices"
+                tools:context="abhiandroid.com.listexample.MainActivity"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.465" app:layout_constraintHorizontal_bias="0.494"/>
+        <Button
+                android:text="@string/exit_string"
+                android:layout_width="300dp"
+                android:layout_height="70dp" android:id="@+id/exit_button"
+                app:layout_constraintTop_toBottomOf="@+id/devices"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:background="@drawable/custom_button"/>
+        <TextView
+                android:text="@string/hello_string"
+                android:textSize="26sp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:layout_width="341dp"
+                android:layout_height="64dp" android:id="@+id/start_textView"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/devices" app:layout_constraintTop_toTopOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

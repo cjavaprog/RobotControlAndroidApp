@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Bobcat control</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="hello_string">Hello, pick your robot to control it</string>
+    <string name="exit_string">Exit</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Send</string>
+    <string name="forward_btn_desc">Button to move forward</string>
+    <string name="backward_btn_desc">Button to move backward</string>
+    <string name="left_btn_desc">Button to turn left</string>
+    <string name="right_btn_desc">Button to turn right</string>
+    <string name="lift_up_btn_desc">Button to lift arm up</string>
+    <string name="lower_btn_desc">Button to lift arm down</string>
+    <string name="up_btn_desc">Button to lift bucket up</string>
+    <string name="down_btn_desc">Button to lift bucket up</string>
+    <string name="disconnect_btn_desc">Button to disconnect from server</string>
+    <string name="lights_btn">Button to turn on and off lights</string>
+</resources>
