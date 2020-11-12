@@ -1,6 +1,8 @@
 # RobotControlAndroidApp
 ## Application created to control self made robot-excavator
 
+<br/><br/>
+
 <img src="appImages/Main_activity.jpg" width=300 height=600>
 After successful connection app moves to controls
 <img src="appImages/Controls_1.jpg" width=600 height=300>
