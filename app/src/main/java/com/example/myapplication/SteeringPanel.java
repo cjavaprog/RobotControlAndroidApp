@@ -15,6 +15,7 @@ public class SteeringPanel extends AppCompatActivity{
 
     private boolean ifLightsOn = false;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,8 +59,7 @@ public class SteeringPanel extends AppCompatActivity{
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
-                }
-                else if (event.getAction() == MotionEvent.ACTION_UP) {
+                } else if (event.getAction() == MotionEvent.ACTION_UP) {
                     try {
                         btn_backward.setColorFilter(getColor(R.color.blueButtonReleased));
                         MainActivity.outputStream.write("stop".getBytes());

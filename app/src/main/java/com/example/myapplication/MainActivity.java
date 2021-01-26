@@ -4,12 +4,10 @@ import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothSocket;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.*;
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
-
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -46,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    void turnBluetoothIfDisabled() throws InterruptedException {
+    public void turnBluetoothIfDisabled() throws InterruptedException {
         if(!btAd.isEnabled()) {
             Toast.makeText(MainActivity.this, "Turning bluetooth on", Toast.LENGTH_SHORT).show();
             btAd.enable();
@@ -81,11 +79,10 @@ public class MainActivity extends AppCompatActivity {
                 deviceList.add(s);
             }
 
-            // po kliknięciu na listę następuje połączenie z wybranym urządzeniem
+            // after click on device on list it try to connect to it
             listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                    //Toast.makeText(MainActivity.this,"Clicked: "+position+deviceList.get(position),Toast.LENGTH_SHORT).show();
                     listView.getChildAt(position).setBackgroundColor(getColor(R.color.pressedListViewColor));
                     addr = deviceList.get(position).substring(deviceList.get(position).indexOf("MAC: ") + 5);
                     connect(btAd);

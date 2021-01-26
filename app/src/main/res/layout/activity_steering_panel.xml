@@ -77,7 +77,7 @@
             android:scaleType="fitCenter"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
             android:layout_marginRight="220dp" android:layout_marginEnd="220dp" android:layout_marginTop="152dp"
-            android:contentDescription="@string/up_btn_desc"/>
+            android:contentDescription="@string/up_btn_desc" android:visibility="invisible"/>
     <ImageButton
             android:layout_width="100dp"
             android:layout_height="100dp" app:srcCompat="@drawable/red_button_up"
@@ -98,7 +98,7 @@
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="152dp"
             android:layout_marginRight="80dp" android:layout_marginEnd="80dp"
-            android:contentDescription="@string/down_btn_desc"/>
+            android:contentDescription="@string/down_btn_desc" android:visibility="invisible"/>
     <ImageButton
             android:layout_width="100dp"
             android:layout_height="100dp" app:srcCompat="@drawable/red_button_down"
@@ -115,5 +115,5 @@
             android:layout_height="wrap_content" android:id="@+id/button_lights"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="16dp" android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
-            android:contentDescription="@string/lights_btn"/>
+            android:contentDescription="@string/lights_btn" android:visibility="invisible"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
